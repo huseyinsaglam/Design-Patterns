@@ -12,8 +12,13 @@ public class VisitorTest {
 		 IPad iPad = new IPad();
 		 GalaxyTab galaxyTab = new GalaxyTab();
 		 
-		 
+		 System.out.println("********** Ekstra Wifi ozellikleri eklenip uyumlu olan tabletler ********** ");
 		 iPad.accept(new WifiVisitor());
+		 galaxyTab.accept(new WifiVisitor());
+		 
+		 
+		 System.out.println("********** Ekstra 3G ozellikleri eklenip uyumlu olan tabletler ********** ");
+		 iPad.accept(new ThreeGVisitor());
 		 galaxyTab.accept(new ThreeGVisitor());
 	}
 

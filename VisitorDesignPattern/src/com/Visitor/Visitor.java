@@ -6,4 +6,5 @@ public interface Visitor {
 
 	void visit(Tablet tablet);
 	//void visiter(Tablet tablet);
+	// eklenenecek metotlari buraya ekleyebiliriz.
 }
